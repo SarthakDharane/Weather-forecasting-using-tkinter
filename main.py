@@ -24,11 +24,7 @@ width=45)
 city_entry.grid(row=1, column=0, ipady=10,
 stick=W+E+N+S)
 def city_name():
-api_request = requests.get("https://
-api.openweathermap.org/data/2.5/weather?q="+
-city_entry.get() +
-"&units=metric&appid="+"ce6721d41b0e70887e1c2a
-888842863e")
+api_request = requests.get(//paste api here")
 api = json.loads(api_request.content)
 y = api['main']
 current_temprature = y['temp']
