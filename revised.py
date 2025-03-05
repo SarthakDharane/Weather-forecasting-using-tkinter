@@ -23,7 +23,7 @@ city_entry = Entry(root, textvariable=city_name, width=45)
 city_entry.grid(row=1, column=0, ipady=10, stick=W+E+N+S)
 
 def get_weather():
-    api_url = f"https://api.openweathermap.org/data/2.5/weather?q={city_name.get()}&units=metric&appid=ce6721d41b0e70887e1c2a888842863e"
+    api_url = f//enter API here"
     try:
         api_request = requests.get(api_url)
         api = api_request.json()
